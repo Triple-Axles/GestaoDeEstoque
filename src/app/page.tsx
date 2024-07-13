@@ -1,12 +1,5 @@
-import React from "react";
-import Login from "./login";
-
-function App() {
+export default function Home() {
   return (
-    <div className="App">
-      <Login />
-    </div>
+    <main>Hello World</main>
   );
 }
-
-export default App;
