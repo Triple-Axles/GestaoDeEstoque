@@ -1,5 +1,12 @@
-export default function Home() {
+import React from "react";
+import Login from "./login";
+
+function App() {
   return (
-    <main>Hello World</main>
+    <div className="App">
+      <Login />
+    </div>
   );
 }
+
+export default App;
