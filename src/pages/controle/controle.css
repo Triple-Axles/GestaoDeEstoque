@@ -1,0 +1,49 @@
+.controle {
+  margin-top: 5%;
+  width: 500px;
+  padding: 90px;
+  border-color: #007bff;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.controle h2 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(25, 64, 109);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.controle label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.controle input,
+.controle select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.controle button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.controle button:hover {
+  background-color: #4585ca;
+}

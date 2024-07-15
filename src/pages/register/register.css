@@ -1,0 +1,48 @@
+.formulario-registro {
+  padding: 20px;
+  margin-top: 5%;
+  border-color: #007bff;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.formulario-registro h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(25, 64, 109);
+}
+
+.formulario-registro label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.formulario-registro input,
+.formulario-registro select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formulario-registro button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario-registro button:hover {
+  background-color: #4585ca;
+}

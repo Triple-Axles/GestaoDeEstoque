@@ -1,0 +1,112 @@
+.tabela-container {
+  width: 70%;
+  background-color: rgb(254, 255, 255);
+  padding: 20px;
+  border-color: #007bff;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: right;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+
+header button {
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: #4585ca;
+}
+.selecione-periodo {
+  font-weight: bold;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  gap: 10px;
+}
+
+.botoes-filtro {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1%;
+  padding: 5px 10px;
+}
+.procurar {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 10px;
+}
+.procurar:hover {
+  background-color: #4585ca;
+}
+
+.quantidade-item,
+.periodo {
+  margin-right: 15%;
+  font-weight: bold;
+}
+
+.botoes-filtro:hover {
+  background-color: #218838;
+}
+
+.table-section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid rgb(25, 64, 109);
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.navegação {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navegação button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navegação button:hover {
+  background-color: #0056b3;
+}
