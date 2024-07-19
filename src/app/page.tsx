@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import Login from "../pages/login/login";
+import Login from "./login/page";
 
 function App() {
   return (

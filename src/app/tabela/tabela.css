@@ -1,8 +1,12 @@
+.botao-register-cadastro {
+  padding: 10px 10px;
+}
+
 .tabela-container {
-  width: 70%;
+  width: 800px;
   background-color: rgb(254, 255, 255);
   padding: 20px;
-  border-color: #007bff;
+  border-color: hsl(211, 100%, 50%);
   border-width: 1px;
   border-radius: 10px;
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
@@ -10,14 +14,16 @@
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: right;
   margin-right: 10%;
   margin-bottom: 20px;
+  gap: 20px;
 }
 
 header button {
   padding: 10px 10px;
-  background-color: #007bff;
+  background-color: hsl(211, 100%, 50%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -41,7 +47,7 @@ header button:hover {
 }
 
 .botoes-filtro {
-  background-color: #28a745;
+  background-color: hsl(211, 100%, 50%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -49,8 +55,12 @@ header button:hover {
   margin-left: 1%;
   padding: 5px 10px;
 }
+.botoes-filtro:hover {
+  background-color: #4585ca;
+}
+
 .procurar {
-  background-color: #007bff;
+  background-color: hsl(145, 93%, 27%);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -58,17 +68,13 @@ header button:hover {
   padding: 5px 10px;
 }
 .procurar:hover {
-  background-color: #4585ca;
+  background-color: hsl(145, 46%, 46%);
 }
 
 .quantidade-item,
 .periodo {
   margin-right: 15%;
   font-weight: bold;
-}
-
-.botoes-filtro:hover {
-  background-color: #218838;
 }
 
 .table-section {
@@ -100,7 +106,7 @@ table th {
 
 .navegação button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: hsl(211, 100%, 50%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -108,5 +114,5 @@ table th {
 }
 
 .navegação button:hover {
-  background-color: #0056b3;
+  background-color: #4585ca;
 }
