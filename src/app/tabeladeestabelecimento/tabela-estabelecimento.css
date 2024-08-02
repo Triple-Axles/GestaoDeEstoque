@@ -1,0 +1,77 @@
+.botao-register-estabelecimento {
+  padding: 10px 10px;
+}
+
+.tabela-estabelecimento-container {
+  width: 800px;
+  background-color: rgb(254, 255, 255);
+  padding: 20px;
+  border-color: hsl(211, 100%, 50%);
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-estabelecimento {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.tabela-estabelecimento button {
+  padding: 10px 10px;
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tabela-estabelecimento button:hover {
+  background-color: #4585ca;
+}
+
+.quantidade-item-estabelecimento {
+  margin-right: 15%;
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.table th,
+.table td {
+  border: 1px solid rgb(25, 64, 109);
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.navegação-estabelecimento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navegação-estabelecimento button {
+  padding: 10px 20px;
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navegação-estabelecimento button:hover {
+  background-color: #4585ca;
+}

@@ -1,0 +1,118 @@
+.botao-register-cadastro {
+  padding: 10px 10px;
+}
+
+.tabela-container {
+  width: 800px;
+  background-color: rgb(254, 255, 255);
+  padding: 20px;
+  border-color: hsl(211, 100%, 50%);
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+header button {
+  padding: 10px 10px;
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: #4585ca;
+}
+.selecione-periodo {
+  font-weight: bold;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  gap: 10px;
+}
+
+.botoes-filtro {
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1%;
+  padding: 5px 10px;
+}
+.botoes-filtro:hover {
+  background-color: #4585ca;
+}
+
+.procurar {
+  background-color: hsl(145, 93%, 27%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 10px;
+}
+.procurar:hover {
+  background-color: hsl(145, 46%, 46%);
+}
+
+.quantidade-item,
+.periodo {
+  margin-right: 15%;
+  font-weight: bold;
+}
+
+.table-section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid rgb(25, 64, 109);
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.navegação {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navegação button {
+  padding: 10px 20px;
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navegação button:hover {
+  background-color: #4585ca;
+}

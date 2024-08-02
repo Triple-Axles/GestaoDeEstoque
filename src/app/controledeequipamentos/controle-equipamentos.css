@@ -1,0 +1,48 @@
+.controle-equipamentos {
+  padding: 60px;
+  margin-top: 25%;
+  border-color: #007bff;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.controle-equipamentos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(25, 64, 109);
+}
+
+.controle-equipamentos label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.controle-equipamentos input,
+.controle-equipamentos select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.controle-equipamentos button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.controle-equipamentos button:hover {
+  background-color: #4585ca;
+}
