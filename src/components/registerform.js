@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const RegisterForm = () => {
+const RegistroUsuario = () => {
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [password, setPassword] = useState("");
@@ -14,23 +14,32 @@ const RegisterForm = () => {
     setError("");
 
     if (password !== confirmPassword) {
-      setError("As senhas não correspondem. Tente Novamente");
+      setError("As senhas não correspondem. Tente novamente.");
       return;
     }
 
     try {
-      const response = await axios.post("api\register\funcao", {
+      const response = await axios.post("/api/register/funcao", {
         name,
         role,
         password,
       });
 
-      console.log("Registro bem-sucedido!", response.data);
+      console.log("Resposta do servidor:", response);
 
-      router.push("/tabela");
+      if (response.status === 200) {
+        console.log("Usuário registrado com sucesso!", response.data);
+        alert("Usuário registrado com sucesso!");
+        window.location.href = "/tabela";
+      }
     } catch (error) {
-      console.error("Erro no registro:", error);
-      setError("Registro falhou. Por favor, tente novamente.");
+      if (error.response && error.response.status === 400) {
+        console.error("Usuário já registrado:", error.response.data.message);
+        setError("Usuário já existe. Por favor, escolha outro nome.");
+      } else {
+        console.error("Erro no registro:", error.message);
+        setError("Registro falhou. Por favor, tente novamente.");
+      }
     }
   };
 
@@ -85,4 +94,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default RegistroUsuario;

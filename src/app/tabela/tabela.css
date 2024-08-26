@@ -41,19 +41,22 @@ header button:hover {
 .filtro {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 5px 0;
-  gap: 10px;
+  gap: 30px;
 }
 
 .botoes-filtro {
   background-color: hsl(211, 100%, 50%);
-  color: white;
-  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 1%;
-  padding: 5px 10px;
+  padding: 4px 0px;
+}
+.período {
+  color: white;
+  font-size: 17px;
 }
 .botoes-filtro:hover {
   background-color: #4585ca;
