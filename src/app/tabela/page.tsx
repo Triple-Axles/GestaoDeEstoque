@@ -1,16 +1,33 @@
 "use client";
 import React, { useState } from "react";
 import "../bodycss/body.css";
-import "./tabela.css";
-import DatePicker from "react-datepicker";
-import "./pickerdate.css";
+import "../tabela/tabela.css";
 import Link from "next/link";
 
 function Tabela() {
-  /* const [startDate, setStartDate] = useState<Date | null>(null);
-  const [endDate, setEndDate] = useState<Date | null>(null);
-  const [showStartPicker, setShowStartPicker] = useState<boolean>(false);
-  const [showEndPicker, setShowEndPicker] = useState<boolean>(false); */
+  // Estados para armazenar as datas escolhidas
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+  const totalItems = 103;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const items = Array.from({ length: totalItems }, (_, index) => ({
+    tipo: `Tipo ${index + 1}`,
+    serial: `Serial ${index + 1}`,
+    local: `Local ${index + 1}`,
+  })).slice(startIndex, endIndex);
+
+  const goToNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  };
+
+  const goToPreviousPage = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
 
   return (
     <div className="botao-register-cadastro">
@@ -29,13 +46,27 @@ function Tabela() {
         <section className="filtro">
           <h1 className="selecione-periodo">Selecione o Período:</h1>
           <div className="botoes-filtro">
-            <button>Período Inicial</button>
+            <label className="período">Período Inicial:</label>
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+            />
           </div>
           <div className="botoes-filtro">
-            <button>Período Final</button>
+            <label className="período">Período Final:</label>
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+            />
           </div>
           <div className="procurar">
-            <button>Procurar</button>
+            <button
+              onClick={() => console.log(`Periodo: ${startDate} - ${endDate}`)}
+            >
+              Procurar
+            </button>
           </div>
         </section>
         <section className="tabela-colunas">
@@ -48,19 +79,28 @@ function Tabela() {
               </tr>
             </thead>
             <tbody>
-              {Array.from({ length: 10 }, (_, index) => (
+              {items.map((item, index) => (
                 <tr key={index}>
-                  <td>Tipo {index + 1}</td>
-                  <td>Serial {index + 1}</td>
-                  <td>Local {index + 1}</td>
+                  <td>{item.tipo}</td>
+                  <td>{item.serial}</td>
+                  <td>{item.local}</td>
                 </tr>
               ))}
             </tbody>
           </table>
           <div className="navegação">
-            <button>Anterior</button>
-            <span>Página 1 de 99</span>
-            <button>Próximo</button>
+            <button onClick={goToPreviousPage} disabled={currentPage === 1}>
+              Anterior
+            </button>
+            <span>
+              Página {currentPage} de {totalPages}
+            </span>
+            <button
+              onClick={goToNextPage}
+              disabled={currentPage === totalPages}
+            >
+              Próximo
+            </button>
           </div>
         </section>
       </div>

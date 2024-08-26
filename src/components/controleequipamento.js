@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function Register3() {
+function ControleDeEquipamentos() {
   const [estabelecimento, setestabelecimento] = useState("");
-  const [serial, setSerial] = useState("");
   const [role, setRole] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -30,7 +29,7 @@ function Register3() {
 
   return (
     <div className="controle-equipamentos">
-      <h2>Controle de Estoque</h2>
+      <h2>Controle de Equipamentos</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Estabelecimento:
@@ -48,7 +47,6 @@ function Register3() {
             onChange={(e) => setRole(e.target.value)}
             required
           >
-            <option value="">Escolha um tipo</option>
             <option value="POS">POS</option>
             <option value="Tablet">Tablete</option>
           </select>
@@ -57,7 +55,7 @@ function Register3() {
           Serial:
           <input
             type="text"
-            value={serial}
+            value={""}
             onChange={(e) => setSerial(e.target.value)}
             required
           />
@@ -70,4 +68,4 @@ function Register3() {
   );
 }
 
-export default Register3;
+export default ControleDeEquipamentos;
